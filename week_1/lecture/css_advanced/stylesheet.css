@@ -1,0 +1,128 @@
+#rectangle-1 {
+  background-color: grey;
+}
+
+#rectangle-1:hover {
+  background-color: brown;
+}
+
+#box-1 {
+  background-color: cyan;
+}
+
+#box-2 {
+  background-color: orange;
+  position: relative;
+  top: -70px;
+  left: 10px;
+}
+
+#rectangle-2 {
+  background-color: grey;
+  /* overflow: hidden; */
+  overflow: scroll;
+  /* overflow: auto; */
+  height: 300px;
+}
+
+#rectangle-2:hover {
+  background-color: beige;
+}
+
+#box-3 {
+  background-color: cyan;
+}
+
+#box-4 {
+  background-color: orange;
+}
+
+.box:first-child {
+  border: 1px solid black;
+}
+
+#rectangle-2 .box:nth-child(even) {
+  background-color: rgb(102, 76, 28);
+}
+
+#rectangle-2 .box:nth-child(odd) {
+  background-color: rgb(24, 68, 68);
+}
+
+.rectangle {
+  width: 300px;
+  height: 120px;
+}
+
+.box {
+  width: 80px;
+  height: 80px;
+}
+
+/*------------------------------------------
+  Responsive Grid Media Queries - 1280, 1024, 768, 480
+   1280-1024   - desktop (default grid)
+   1024-768    - tablet landscape
+   768-480     - tablet 
+   480-less    - phone landscape & smaller
+--------------------------------------------*/
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+  /* 1920px */
+  .rectangle {
+    width: 260px;
+    height: 100px;
+  }
+
+  .box {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .rectangle {
+    width: 220px;
+    height: 80px;
+  }
+
+  .box {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+  .rectangle {
+    width: 180px;
+    height: 80px;
+  }
+
+  .box {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .rectangle {
+    width: 150px;
+    height: 60px;
+  }
+
+  .box {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media all and (max-width: 200px) {
+  .rectangle {
+    width: 80px;
+    height: 40px;
+  }
+
+  .box {
+    width: 10px;
+    height: 10px;
+  }
+}
